@@ -1,8 +1,11 @@
+{% load staticfiles %} <!-- 模板标签加载静态文件路径 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ description.web_title }}</title>
+    <meta name="keywords" content="{{ description.web_keywords }}">
+    <meta name="description" content="{{ description.web_description }}">
 </head>
 <body>
 
