@@ -36,8 +36,8 @@ class ProductStyle(models.Model):
     product_style_number = models.CharField(max_length=16, null=False, verbose_name='产品样式编号')
     product_style_product_number = models.ForeignKey(Products, on_delete=models.CASCADE, default="",
                                                      verbose_name='产品编号')
-    product_current_price = models.FloatField(null=False, verbose_name='产品现价')
-    product_original_price = models.FloatField(null=False, verbose_name='产品原价')
+    product_style_current_price = models.FloatField(null=False, verbose_name='产品现价')
+    product_style_original_price = models.FloatField(null=False, verbose_name='产品原价')
     product_style_name = models.CharField(max_length=64, null=False, verbose_name='产品样式名称')
     product_style_attributes = models.CharField(max_length=16, null=False, verbose_name='产品样式属性')
     product_style_img = models.ImageField(upload_to=get_file_path, verbose_name='产品样式照片')
